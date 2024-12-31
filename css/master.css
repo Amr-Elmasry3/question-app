@@ -1,0 +1,199 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root{
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --white-color: #ffffff;
+  --grey-color: #EEE;
+}
+body{
+  font-family: "Rubik", sans-serif;
+  background-color: var(--grey-color);
+  margin: 0;
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+a{
+  text-decoration: none;
+}
+.contanier{
+  margin: 0 110px;
+}
+@media (max-width: 992px){
+  .contanier{
+    margin: 0 80px;
+  }
+}
+@media (max-width: 767px){
+  .contanier{
+    margin: 0 15px;
+  }
+}
+/* End Global Rules */
+/* Start My Game */
+.my-game{
+  direction: rtl;
+}
+.my-game .start{
+  position: fixed;
+  background-color: #0075ff91;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.my-game .start .start-title{
+  margin: 0 15px 20px;
+  color: var(--blue-alt-color);
+  text-align: center;
+  font-size: 20px;
+  background-color: var(--white-color);
+  padding: 10px 15px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 15px var(--blue-alt-color);
+}
+.my-game .start input{
+  border: none;
+  background-color: var(--white-color);
+  width: fit-content;
+  padding: 10px 16px;
+  font-size: 38px;
+  font-family: 'Rubik';
+  font-weight: 600;
+  color: var(--blue-color);
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: inset 5px 5px 5px #868686;
+}
+.my-game .head{
+  background-color: var(--blue-color);
+  padding: 20px 10px;
+  text-align: center;
+  margin: 0 0 15px;
+}
+.my-game .head h1{
+  margin: 0;
+  color: var(--white-color);
+}
+.my-game .contanier .content{
+  background-color: var(--white-color);
+  padding: 10px 15px;
+}
+.my-game .contanier .content .head-content{
+  background-color: var(--blue-color);
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.my-game .contanier .content .head-content span{
+  font-size: 18px;
+  color: var(--white-color);
+}
+.my-game .contanier .content .head-content .count-of-ques .count-of-ques-in,
+.my-game .contanier .content .head-content .type-of-ques .type-of-ques-in{
+  font-weight: 600;
+}
+.my-game .contanier .content .questions{
+  background-color: var(--grey-color);
+  padding: 15px 10px;
+  margin: 15px 0;
+  border-bottom: 3px solid var(--blue-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my-game .contanier .content .questions .title{
+  background-color: var(--blue-alt-color);
+  padding: 10px;
+  margin: 0;
+  width: fit-content;
+  border-radius: 15px;
+  border: 3px solid var(--white-color);
+  color: var(--white-color);
+}
+.my-game .contanier .content .questions .answers{
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0 0;
+}
+.my-game .contanier .content .questions .answers span{
+  width: fit-content;
+  padding: 8px 15px;
+  background-color: var(--white-color);
+  border-radius: 15px;
+  color: #222;
+  font-weight: 600;
+  cursor: pointer;
+}
+.my-game .contanier .content .questions .answers span.active{
+  background-color: var(--blue-color);
+}
+.my-game .contanier .content .questions .answers span:hover{
+  background-color: var(--blue-color);
+  transition: 0.4s;
+}
+.my-game .contanier .content button{
+  border: none;
+  border-radius: 15px;
+  background-color: var(--blue-color);
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 25px;
+  font-family: 'Rubik';
+  font-weight: 600;
+  color: var(--white-color);
+  cursor: pointer;
+}
+.my-game .contanier .content .time-bulltes{
+  background-color: #ccc;
+  margin: 15px 0 0;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.my-game .contanier .content .time-bulltes .time{
+  color: var(--blue-alt-color);
+  font-size: 19px;
+  font-weight: 600;
+}
+.my-game .contanier .content .time-bulltes .bulltes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.my-game .contanier .content .time-bulltes .bulltes span{
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.my-game .contanier .content .time-bulltes .bulltes span.true{
+  background-color: #009245 !important;
+}
+.my-game .contanier .content .time-bulltes .bulltes span.false{
+  background-color: red !important;
+}
+/* End My Game */
+
+/* 3 */
